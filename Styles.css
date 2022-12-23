@@ -56,14 +56,15 @@ body{
     background: transparent;
     outline: none;
     border: none;
-    width: 50px;
-    height: 50px;
+    /* width: 50px; */
+    /* height: 50px; */
     cursor: pointer;
- justify-content: center;
+ /* justify-content: center; */
  font-size: 15px;
 }
 .main .input .talk i{
     font-size: 20px;
+    font-style: normal;
     color: aqua;
 }
 .main .input .content{
