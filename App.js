@@ -40,7 +40,14 @@ recognition.onresult = (event) => {
   const transcript = event.results[current][0].transcript;
   content.textContent = transcript;
   speakThis(transcript.toLowerCase());
+  setTimeout(() => {
+    content.textContent = "CLICK HERE TO SPEAK";
+  }, 2000);
 };
+
+// setTimeout(() => {
+//   content.textContent = "CLICK HERE TO SPEAK";
+// },1000)
 
 btn.addEventListener("click", () => {
   recognition.start();
